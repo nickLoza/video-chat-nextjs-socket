@@ -1,12 +1,16 @@
 "use client"
 import React from "react";
-import Link from "next/link";
+import { useRouter } from 'next/navigation';
 import { v1 as uuid } from "uuid";
 
 const CreateRoomButton = () => {
+    const router = useRouter();
+    function handleOnClick(){
+        router.push(`/room/${uuid()}`)
+    }
 
     return (
-        <Link href={`/room/${uuid()}`}>Create Room</Link>
+        <button onClick={handleOnClick}>Create Room</button>
     );
 }
 
