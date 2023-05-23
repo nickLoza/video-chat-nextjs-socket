@@ -13,7 +13,7 @@ function Room({params}) {
             </Suspense>
             <div className={styles.linkField}>
                 <label className={styles.label} htmlFor="room-link">Room Link </label>
-                <p>{`https://video-chat-nextjs-socket.netlify.app/room/${params.roomID}`}</p>
+                <p>{`https://video-chat-nextjs-socket-nick.vercel.app/room/${params.roomID}`}</p>
                 <CopyButton roomID={params.roomID}/>
             </div>
         </section>
