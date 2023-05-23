@@ -1,0 +1,48 @@
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  background: url("https://i.postimg.cc/9MR2RfBM/NAC-kick-off-1024x687.webp") no-repeat center center / cover;
+
+}
+
+.main{
+  text-align: center;
+  background: none;
+
+}
+
+.main h1{
+  font-size: 2.4rem;
+}
+
+.main button{
+  font-size: 2.1rem;
+  padding: .4rem .9rem;
+  cursor: pointer;
+  transition: transform .1s ease-in-out;
+  background-color: #fff;
+  color: #000;
+  margin-top: 4rem;
+}
+
+.main button:hover{
+  transform: scale(1.1);
+}
+
+.githubLink{
+  position: absolute;
+  z-index: 1000;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  font-size: 3rem;
+  transition: transform .2s ease-in;
+}
+
+.githubLink:hover{
+  transform: scale(1.1);
+}
