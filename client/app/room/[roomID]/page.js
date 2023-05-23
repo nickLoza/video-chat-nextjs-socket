@@ -3,6 +3,8 @@ import Webcams from "./Webcams"
 import styles from './page.module.css'
 import CopyButton from "./CopyButton"
 import Loading from "./loading";
+import Link from 'next/link';
+
 function Room({params}) {
     console.log(params)
 
@@ -12,9 +14,8 @@ function Room({params}) {
                 <Webcams roomID={params.roomID}/>
             </Suspense>
             <div className={styles.linkField}>
-                <label className={styles.label} htmlFor="room-link">Room Link </label>
-                <p>{`https://video-chat-nextjs-socket-nick.vercel.app/room/${params.roomID}`}</p>
                 <CopyButton roomID={params.roomID}/>
+                <Link href="/">End meeting</Link>
             </div>
         </section>
     )

@@ -21,13 +21,13 @@ export default function RootLayout({ children }) {
       <meta property="og:url" content="https://website/"/>
       <meta property="og:title" content="Video Chat"/>
       <meta property="og:description" content="Next.js video chat with socket.io and express, my first project using next.js and socket.io"/>
-      <meta property="og:image" content="https://i.postimg.cc/br5CdKPf/chrome-capture-2023-4-21.webp"/>
+      <meta property="og:image" content="https://i.postimg.cc/0QTtmJQx/preview-video-chat.webp"/>
 
       <meta property="twitter:card" content="summary_large_image"/>
       <meta property="twitter:url" content="https://website/"/>
       <meta property="twitter:title" content="Video Chat"/>
       <meta property="twitter:description" content="Next.js video chat with socket.io and express, my first project using next.js and socket.io"/>
-      <meta property="twitter:image" content="https://i.postimg.cc/br5CdKPf/chrome-capture-2023-4-21.webp"/>
+      <meta property="twitter:image" content="https://i.postimg.cc/0QTtmJQx/preview-video-chat.webp"/>
     </head >
       <body className={`${inter.className} ${styles.body}`}>
         {children}
